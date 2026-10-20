@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Healthy Grocery Store | Épicerie saine et naturelle à Dakar</title>
+<meta name="description" content="Produits naturels et bio livrés à Dakar : farines, graines, huiles, laits végétaux, sans gluten. Livraison gratuite dès 30 000 FCFA.">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#app">Aller au contenu</a>
+
+<div class="topbar">
+  <span>Facebook · Instagram</span>
+  <span>+221 77 482 00 49 · Lun–Ven 9 h–18 h · Sam 12 h–18 h</span>
+  <span><b>Livraison gratuite</b> dès 30 000 FCFA</span>
+</div>
+
+<header class="sitehead">
+  <a class="logo" href="#accueil" aria-label="Healthy Grocery Store, accueil"><img src="assets/img/logo.png" alt="HGS Healthy Grocery Store" width="56" height="88"></a>
+  <form class="search" id="searchForm" role="search">
+    <select id="qcat" aria-label="Rayon"><option value="">Tous les rayons</option></select>
+    <input type="search" id="q" placeholder="Rechercher un produit : thiakri, curcuma, chia…" aria-label="Rechercher un produit" autocomplete="off">
+    <button type="submit">Rechercher</button>
+  </form>
+  <div class="icons">
+    <a href="#compte"><b>Mon compte</b><small>Connexion</small></a>
+    <button type="button" id="favBtn"><b>Favoris</b><small id="favN">0 produit</small></button>
+    <a class="cartbtn" href="#panier"><b>Panier · <span id="cartN">0</span></b><small id="cartT">0 FCFA</small></a>
+  </div>
+</header>
+
+<nav class="menubar" aria-label="Menu principal">
+  <div class="mega-wrap">
+    <button type="button" id="megaBtn" aria-expanded="false" aria-controls="mega">Tous les rayons ▾</button>
+    <div class="mega" id="mega" hidden></div>
+  </div>
+  <a href="#boutique/sans-gluten">Sans gluten</a>
+  <a href="#boutique/farines-pates-cereales">Farines et céréales</a>
+  <a href="#boutique/graines-et-noix">Graines et noix</a>
+  <a href="#boutique/epices-et-divers">Épices</a>
+  <a href="#boutique/huiles">Huiles</a>
+  <a href="#boutique/promo" class="hot">Promotions</a>
+  <a href="#magasin" class="push">Notre magasin</a>
+</nav>
+
+<main id="app" tabindex="-1"></main>
+
+<section class="news">
+  <div><h2>Reçois nos arrivages et promos</h2><p>Un message quand un produit revient en stock.</p></div>
+  <form id="newsForm"><input type="text" id="nl" placeholder="Email ou numéro WhatsApp" aria-label="Email ou WhatsApp"><button class="btn light" type="submit">Je m'inscris</button></form>
+</section>
+<footer class="sitefoot">
+  <div><h3>Healthy Grocery Store</h3><p>Votre compagnon de choix pour une alimentation saine et naturelle.</p><p>Mamelles, Dakar, Sénégal</p><p>+221 77 482 00 49</p><p>info@hgsdakar.com</p></div>
+  <div><h3>Rayons</h3><a href="#boutique/sans-gluten">Sans gluten</a><a href="#boutique/farines-pates-cereales">Farines, pâtes, céréales</a><a href="#boutique/graines-et-noix">Graines, noix, fruits secs</a><a href="#boutique/epices-et-divers">Épices et divers</a><a href="#boutique/huiles">Huiles</a></div>
+  <div><h3>Aide</h3><a href="#magasin">Notre magasin</a><a href="#compte">Mon compte</a><a href="#legal">Remboursement</a><a href="#legal">Confidentialité</a></div>
+  <div><h3>Livraison et paiement</h3><p>Gratuite dès 30 000 FCFA à Dakar</p><p>Avant 15 h : livré le jour même</p><p>Wave · Orange Money · cash</p></div>
+  <p class="legalline">Maquette de validation de la refonte hgsdakar.com. Les commandes ne sont pas encore actives.</p>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
